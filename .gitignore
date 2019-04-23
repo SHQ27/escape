@@ -1,0 +1,17 @@
+/app/config/parameters.yml
+/var/*
+/var/cache
+/var/cache/*
+/var/logs
+/var/logs/*
+!var/cache/.gitkeep
+!var/logs/.gitkeep
+*.log
+*.swp
+*.swo
+!/var/sessions
+!/var/sessions/*
+!/var/sessions/.gitkeep
+!var/SymfonyRequirements.php
+
+
