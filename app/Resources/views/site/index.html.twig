@@ -2,4 +2,25 @@
 
 {% block body %}
 
+<div class="container-fluid">
+
+	<div id='juegos' class='row'>
+    	<div class='col-md-4 juegosContainer'>
+    		<img id='saw' class='img-fluid' src='{{asset('img/SAW.jpg')}}'>
+    		<a href='#'><div class='reservaJuegosAhora'>RESERVÁ AHORA</div></a>
+    		<a href='#'><div class='masInfo'>MÁS INFORMACIÓN</div></a>
+    	</div>
+    	<div class='col-md-4 juegosContainer'>
+    		<img id='piratas' class='img-fluid' src='{{asset('img/PIRATAS.jpg')}}'>
+    		<a href='#'><div class='reservaJuegosAhora'>RESERVÁ AHORA</div></a>
+    		<a href='#'><div class='masInfo'>MÁS INFORMACIÓN</div></a>
+    	</div>
+    	<div class='col-md-4 juegosContainer'>
+    		<img id='ouija' class='img-fluid' src='{{asset('img/OUIJA.jpg')}}'>
+    		<a href='#'><div class='reservaJuegosAhora'>RESERVÁ AHORA</div></a>
+    		<a href='#'><div class='masInfo'>MÁS INFORMACIÓN</div></a>
+    	</div>
+	</div>
+</div>
+
 {% endblock %}

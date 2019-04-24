@@ -57,3 +57,35 @@ a:hover {
     background-color: #bf1e2e;
 }
 
+/* JUEGOS */
+
+#juegos {
+    margin-top: 0px;
+    width: 100%;
+}
+
+.juegosContainer {
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.reservaJuegosAhora {
+    border-radius: 14px;
+    padding: 12px;
+    margin-top: 40px;
+    margin-left: 75px;
+    margin-right: 75px;
+    background-color: #bf1e2e;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.masInfo {
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: 550;
+}
+
