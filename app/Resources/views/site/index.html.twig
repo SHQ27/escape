@@ -1,0 +1,165 @@
+{% extends '/includes/layout.html.twig' %}
+
+{% block body %}
+
+<!-- JUMBOTRON -->
+<div>
+
+	<div id='jumbotron' class="jumbotron" style="background-image:url('{{ asset('img/background_jumbotron2.jpg') }}')">
+		<h1><div class='mainText'>LA EXPERIENCIA DE JUEGOS DE ESCAPE MÁS INMERSIVA DE BUENOS AIRES</div></h1>
+		<a href='{{path('reservas')}}'><div class='reservaJumbotronAhora'>RESERVÁ AHORA</div></a>
+		<p>Comunicate con nosotros al <strong>15 4081 7293</strong></p>
+		<p>O por Whatsapp al <strong>15 4891 7263</strong></p>
+	</div>
+</div>
+
+
+<!-- JUEGOS -->
+<div class="container-fluid">
+	<div id='juegos' class='row'>
+
+    	<div class='col-md-4 juegosContainer'>
+    		<img id='saw' class='img-fluid' src='{{asset('img/SAW.jpg')}}'>
+    		<a href='{{path('reservas')}}'><div class='reservaJuegosAhora'>RESERVÁ AHORA</div></a>
+				<!-- Button trigger modal SAW -->
+				<a type="button" data-toggle="modal" data-target=".saw-modal-xl"><div class='masInfo'>MÁS INFORMACIÓN</div></a>
+				<!-- Modal SAW -->
+				<div class="modal fade saw-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-xl">
+				    <div class="modal-content">
+							<div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">EL JUEGO DEL MIEDO</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div id='sawModalBody' class="modal-body row">
+								<div class='col-md-3 sawModalBodyContainer'>
+									<img id='sawModalImg' class='img-fluid' src='{{asset('img/SAW.jpg')}}'>
+								</div>
+				        <div class='col-md-9 sawModalBodyContainer'>
+									<a>En medio del cuarto, hay un cadáver con un disparo en la cabeza, una grabadora en la mano derecha y una pistola en la izquierda. Pronto descubren que en sus bolsillos tienen unos sobres con sus nombres y unos casetes con la palabra “reprodúceme” escrita en ellos. El doctor Gordon tiene además una bala (munición) y una llave, que no sirve para abrir las cadenas. Adam consigue la grabadora del muerto y reproduce lo siguiente: Lawrence debe matar a Adam antes de las seis de la mañana, o de lo contrario, su esposa y su hija serán asesinadas y ellos quedarán allí encerrados hasta pudrirse y morir...</a>
+								</div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+    	</div>
+
+    	<div class='col-md-4 juegosContainer'>
+    		<img id='piratas' class='img-fluid' src='{{asset('img/PIRATAS.jpg')}}'>
+    		<a href='{{path('reservas')}}'><div class='reservaJuegosAhora'>RESERVÁ AHORA</div></a>
+				<!-- Button trigger modal PIRATAS -->
+				<a type="button" data-toggle="modal" data-target=".piratas-modal-xl"><div class='masInfo'>MÁS INFORMACIÓN</div></a>
+				<!-- Modal PIRATAS -->
+				<div class="modal fade piratas-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-xl">
+				    <div class="modal-content">
+							<div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">LA MALDICIÓN PIRATA</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+							<div id='piratasModalBody' class="modal-body row">
+								<div class='col-md-3 piratasModalBodyContainer'>
+									<img id='piratasModalImg' class='img-fluid' src='{{asset('img/PIRATAS.jpg')}}'>
+								</div>
+				        <div class='col-md-9 piratasModalBodyContainer'>
+									<a>En el Perla Negra, Barbossa le explica a Elizabeth por qué tienen tanto empeño en conseguir el medallón dorado: resulta que se trata de oro azteca maldito, el cual tiene en total 882 piezas que le fueron entregadas en un cofre de roca al conquistador Hernán Cortés en persona y los dioses aztecas pusieron una maldición para todos aquellos que robaran las piezas doradas de su cofre de piedra quedarían castigados por toda la eternidad, serían inmortales aunque no podrían sentir nada y se transformarían en esqueletos vivientes a la luz de la luna llena. Ahora trataban de encontrar todas las monedas del cofre que habían ido malgastando en mujeres y alcohol. Lo que no sabe ella es que es la sangre de «Bootstrap Bill» - o la de su descendencia - se necesita para acabar con la maldición y al decir que ella se apellidaba Turner, los piratas la tomaron por hija...</a>
+								</div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+    	</div>
+
+    	<div class='col-md-4 juegosContainer'>
+    		<img id='ouija' class='img-fluid' src='{{asset('img/OUIJA.jpg')}}'>
+    		<a href='{{path('reservas')}}'><div class='reservaJuegosAhora'>RESERVÁ AHORA</div></a>
+				<!-- Button trigger modal OUIJA -->
+				<a type="button" data-toggle="modal" data-target=".ouija-modal-xl"><div class='masInfo'>MÁS INFORMACIÓN</div></a>
+				<!-- Modal OUIJA-->
+				<div class="modal fade ouija-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-xl">
+				    <div class="modal-content">
+							<div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">OUIJA</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+							<div id='ouijaModalBody' class="modal-body row">
+								<div class='col-md-3 ouijaModalBodyContainer'>
+									<img id='ouijaModalImg' class='img-fluid' src='{{asset('img/OUIJA.jpg')}}'>
+								</div>
+				        <div class='col-md-9 ouijaModalBodyContainer'>
+									<a>Debbie Galardi recuerda jugar a la Ouija con su mejor amiga Laine Morris siendo niñas. En la actualidad, Debbie lanza su tabla Ouija en el fuego, quemándola. Debbie implica a Laine que algo extraño sucedió con el tablero Ouija. Después de que Laine se marcha, el tablero Ouija reaparece en el dormitorio de Debbie y es poseída. Luego se cuelga con las luces navideñas, y resultando así en su muerte...</a>
+								</div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+    	</div>
+
+	</div>
+</div>
+
+
+<!-- PRECIOS -->
+<div>
+    <div id='precios' class='row'>
+        <div class='col-md-2 preciosContainer'></div>
+        <div class='col-md-2 preciosContainer border-right'>
+            <img class='img-fluid preciosImg' src='{{asset('img/icono_precios.png')}}'>
+            <img class='img-fluid preciosImg' src='{{asset('img/icono_precios.png')}}'>
+            <a><div class='preciosJugadores'>2 JUGADORES</div></a>
+            <a><div class='preciosPesos'>$500</div></a>
+            <a><div class='preciosPersona'>POR PERSONA</div></a>
+        </div>
+        <div class='col-md-2 preciosContainer border-right'>
+            <img class='img-fluid preciosImg' src='{{asset('img/icono_precios.png')}}'>
+            <img class='img-fluid preciosImg' src='{{asset('img/icono_precios.png')}}'>
+            <img class='img-fluid preciosImg' src='{{asset('img/icono_precios.png')}}'>
+            <a><div class='preciosJugadores'>3 JUGADORES</div></a>
+            <a><div class='preciosPesos'>$450</div></a>
+            <a><div class='preciosPersona'>POR PERSONA</div></a>
+        </div>
+        <div class='col-md-2 preciosContainer border-right'>
+            <img class='img-fluid preciosImg' src='{{asset('img/icono_precios.png')}}'>
+            <img class='img-fluid preciosImg' src='{{asset('img/icono_precios.png')}}'>
+            <img class='img-fluid preciosImg' src='{{asset('img/icono_precios.png')}}'>
+            <img class='img-fluid preciosImg' src='{{asset('img/icono_precios.png')}}'>
+            <a><div class='preciosJugadores'>4 JUGADORES</div></a>
+            <a><div class='preciosPesos'>$425</div></a>
+            <a><div class='preciosPersona'>POR PERSONA</div></a>
+        </div>
+        <div class='col-md-2 preciosContainer'>
+            <img class='img-fluid preciosImg' src='{{asset('img/icono_precios.png')}}'>
+            <img class='img-fluid preciosImg' src='{{asset('img/icono_precios.png')}}'>
+            <img class='img-fluid preciosImg' src='{{asset('img/icono_precios.png')}}'>
+            <img class='img-fluid preciosImg' src='{{asset('img/icono_precios.png')}}'>
+            <img class='img-fluid preciosImg' src='{{asset('img/icono_precios.png')}}'>
+            <a><div class='preciosJugadores'>5 JUGADORES</div></a>
+            <a><div class='preciosPesos'>$400</div></a>
+            <a><div class='preciosPersona'>POR PERSONA</div></a>
+        </div>
+        <div class='col-md-2 preciosContainer'></div>
+    </div>
+</div>
+
+
+<!--GOOGLE MAP -->
+<div id="map" style="height: 400px"></div>
+
+
+{% endblock %}
