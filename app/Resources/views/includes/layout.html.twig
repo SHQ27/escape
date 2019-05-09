@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="{{asset('css/bootstrap/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <title>{% block title %}Club de escape - Pilar{% endblock %}</title>
 
@@ -20,47 +20,57 @@
     <body>
 
         <!-- HEADER -->
-        <div class="container-fluid">
-
-            <div id='header' class='row'>
-                <div class='col-md-2 logoContainer'><a href='{{path('homepage')}}'><img id='logo' class='img-fluid' src='{{asset('img/logo.png')}}'></a></div>
-                <div class='col-md-8 linkContainer row'>
-                    <a class='commonLink' data-goto='juegos' href='#'>Juegos</a>
-                    <a class='commonLink' href='#'>Cómo jugar</a>
-                    <a class='commonLink' href='#'>Eventos</a>
-                    <a class='commonLink' data-goto='map' href='#'>Encontranos</a>
-                    <a href='{{path('reservas')}}'><div class='reservaAhora'>RESERVÁ AHORA</div></a>
-                </div>
-                <div class='col-md-2 socialContainer'>
-                    <img class='redesLinkFb' href='#' src='{{asset('img/logo_fb.jpg')}}'>
-                    <img class='redesLinkIg' href='#' src='{{asset('img/logo_ig.png')}}'>
+        <div class='container-fluid'>
+            <div id='desktopNav' class='d-none d-md-block'>
+                <div id='header' class='row'>
+                    <div class='col-md-2 logoContainer'><a href='{{path('homepage')}}'><img id='logo' class='img-fluid' src='{{asset('img/logo.png')}}'></a></div>
+                    <div class='col-md-8 linkContainer row'>
+                        <a class='commonLink' data-goto='juegos' href='#'>Juegos</a>
+                        <a class='commonLink' href='#'>Cómo jugar</a>
+                        <a class='commonLink' href='#'>Eventos</a>
+                        <a class='commonLink' data-goto='map' href='#'>Encontranos</a>
+                        <a href='{{path('reservas')}}'><div class='reservaAhora'>RESERVÁ AHORA</div></a>
+                    </div>
+                    <div class='col-md-2 socialContainer'>
+                        <img class='redesLinkFb' href='#' src='{{asset('img/logo_fb.jpg')}}'>
+                        <img class='redesLinkIg' href='#' src='{{asset('img/logo_ig.png')}}'>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <div id='mobileNav' class='d-md-none'>
+            <div class='container-fluid'>
+                <div class='row'>
+                    <a href='{{path('homepage')}}'><img width='50%' style='margin-top: 15px;'class='img-fluid' src='{{asset('img/logo.png')}}'></a>
+                </div>
+                <div class='row mobileLinks'>
+                    <a data-goto='juegos' href='#'>Juegos</a>
+                    <a href='#'>Cómo jugar</a>
+                    <a href='#'>Eventos</a>
+                    <a data-goto='map' href='#'>Encontranos</a>
+                </div>
+            </div>
+        </div>
 
         {% block body %}{% endblock %}
 
         <!-- FOOTER -->
-        <div>
-
-            <div id='footer' class="footer">
-                <div class='logoFooterContainer'>
-                    <a id='bottomLogo' data-goto='header' href='#'><img class='logoFooter' class='img-fluid' src='{{asset('img/logo.png')}}'></a>
-                </div>
-                <div class='linkFooterContainer'>
-                    <a class='commonLinkFooter' data-goto='juegos' href='#'>Juegos</a>
-                    <a class='commonLinkFooter' href='#'>Cómo jugar</a>
-                    <a class='commonLinkFooter' href='#'>Eventos</a>
-                    <a class='commonLinkFooter' href='#'>Encontranos</a>
-                    <a class='commonLinkFooter' href='{{path('reservas')}}'>Reservá Ahora</a>
-                </div>
-                <div class='infoAdressContainer'>
-                    <a class='infoAdressFooter' href='#'>Dirección - Horario de atención</a>
-                </div>
+        <div id='footer' class="footer">
+            <div class='logoFooterContainer'>
+                <a id='bottomLogo' data-goto='header' href='#'><img class='logoFooter' class='img-fluid' src='{{asset('img/logo.png')}}'></a>
             </div>
-        <div>
-
+            <div class='linkFooterContainer'>
+                <a class='commonLinkFooter' data-goto='juegos' href='#'>Juegos</a>
+                <a class='commonLinkFooter' href='#'>Cómo jugar</a>
+                <a class='commonLinkFooter' href='#'>Eventos</a>
+                <a class='commonLinkFooter' href='#'>Encontranos</a>
+                <a class='commonLinkFooter' href='{{path('reservas')}}'>Reservá Ahora</a>
+            </div>
+            <div class='infoAdressContainer'>
+                <a class='infoAdressFooter' href='#'>Dirección - Horario de atención</a>
+            </div>
+        </div>
         {% block javascripts %}
 
         <script src="{{asset('js/jquery/jquery-3.4.0.min.js')}}"></script>
@@ -73,7 +83,7 @@
         <!-- Google Map -->
         <script src="{{asset('js/map.js')}}"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOc0zLWwXekSXmjE7xbfLpaF9w2VAhjgM&callback=initMap"
-        async defer></script>
+                async defer></script>
 
         {% endblock %}
     </body>
