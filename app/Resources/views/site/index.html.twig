@@ -18,28 +18,31 @@
     		<img id='saw' class='img-fluid' src='{{asset('img/SAW.jpg')}}'>
     		<a href='{{path('reservas')}}'><div class='reservaJuegosAhora'>RESERVÁ AHORA</div></a>
 				<!-- Button trigger modal SAW -->
-				<a type="button" data-toggle="modal" data-target=".saw-modal-xl"><div class='masInfo'>MÁS INFORMACIÓN</div></a>
+				<a type="button" data-toggle="modal" data-target=".saw-modal-lg"><div class='masInfo'>MÁS INFORMACIÓN</div></a>
 				<!-- Modal SAW -->
-				<div class="modal fade saw-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-				  <div class="modal-dialog modal-xl">
+				<div class="modal fade saw-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
 				    <div class="modal-content">
 							<div class="modal-header">
-				        <h5 class="modal-title" id="exampleModalLabel">EL JUEGO DEL MIEDO</h5>
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				          <span aria-hidden="true">&times;</span>
 				        </button>
 				      </div>
 				      <div id='sawModalBody' class="modal-body row">
-                          <div class='col-md-3 sawModalBodyContainer'>
+                <div class='col-md-4 sawModalBodyContainer'>
 									<img id='sawModalImg' class='img-fluid' src='{{asset('img/SAW.jpg')}}'>
 								</div>
-				        <div class='col-md-9 sawModalBodyContainer'>
-									<a>En medio del cuarto, hay un cadáver con un disparo en la cabeza, una grabadora en la mano derecha y una pistola en la izquierda. Pronto descubren que en sus bolsillos tienen unos sobres con sus nombres y unos casetes con la palabra “reprodúceme” escrita en ellos. El doctor Gordon tiene además una bala (munición) y una llave, que no sirve para abrir las cadenas. Adam consigue la grabadora del muerto y reproduce lo siguiente: Lawrence debe matar a Adam antes de las seis de la mañana, o de lo contrario, su esposa y su hija serán asesinadas y ellos quedarán allí encerrados hasta pudrirse y morir...</a>
+				        <div class='col-md-8 modalBodyText'>
+									<h5 class="modal-title" id="exampleModalLabel">El Juego del Miedo</h5>
+									<p class='modalDescription'>Todos tenemos secretos oscuros en nuestras vidas, es hora de que paguemos por ellos. Luego de perder la conciencia despiertan en un baño abandonado. Todo a tu alrededor ha sido planeado para hacerte jugar. Deberan escapar antes que sea muy tarde y el baño sea su tumba para siempre.</p>
+									<a>Tiempo de juego: 60 minutos</a>
+									<a href='{{path('reservas')}}'><div class='reservaJuegosModal'>RESERVÁ AHORA</div></a>
 								</div>
 				      </div>
+							<!-- Modal Footer (Lo comento por si lo llegamos a necesitar nuevamente, sino borrar; en los otros juegos directamente lo borré)
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
-				      </div>
+				      </div> -->
 				    </div>
 				  </div>
 				</div>
@@ -49,27 +52,26 @@
     		<img id='piratas' class='img-fluid' src='{{asset('img/PIRATAS.jpg')}}'>
     		<a href='{{path('reservas')}}'><div class='reservaJuegosAhora'>RESERVÁ AHORA</div></a>
 				<!-- Button trigger modal PIRATAS -->
-				<a type="button" data-toggle="modal" data-target=".piratas-modal-xl"><div class='masInfo'>MÁS INFORMACIÓN</div></a>
+				<a type="button" data-toggle="modal" data-target=".piratas-modal-lg"><div class='masInfo'>MÁS INFORMACIÓN</div></a>
 				<!-- Modal PIRATAS -->
-				<div class="modal fade piratas-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-				  <div class="modal-dialog modal-xl">
+				<div class="modal fade piratas-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
 				    <div class="modal-content">
 							<div class="modal-header">
-				        <h5 class="modal-title" id="exampleModalLabel">LA MALDICIÓN PIRATA</h5>
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				          <span aria-hidden="true">&times;</span>
 				        </button>
 				      </div>
 							<div id='piratasModalBody' class="modal-body row">
-								<div class='col-md-3 piratasModalBodyContainer'>
+								<div class='col-md-4 piratasModalBodyContainer'>
 									<img id='piratasModalImg' class='img-fluid' src='{{asset('img/PIRATAS.jpg')}}'>
 								</div>
-				        <div class='col-md-9 piratasModalBodyContainer'>
-									<a>En el Perla Negra, Barbossa le explica a Elizabeth por qué tienen tanto empeño en conseguir el medallón dorado: resulta que se trata de oro azteca maldito, el cual tiene en total 882 piezas que le fueron entregadas en un cofre de roca al conquistador Hernán Cortés en persona y los dioses aztecas pusieron una maldición para todos aquellos que robaran las piezas doradas de su cofre de piedra quedarían castigados por toda la eternidad, serían inmortales aunque no podrían sentir nada y se transformarían en esqueletos vivientes a la luz de la luna llena. Ahora trataban de encontrar todas las monedas del cofre que habían ido malgastando en mujeres y alcohol. Lo que no sabe ella es que es la sangre de «Bootstrap Bill» - o la de su descendencia - se necesita para acabar con la maldición y al decir que ella se apellidaba Turner, los piratas la tomaron por hija...</a>
+				        <div class='col-md-8 modalBodyText'>
+									<h5 class="modal-title" id="exampleModalLabel">La Maldición Pirata</h5>
+									<p class='modalDescription'>Jack Sparrow prometió tu alma a Davy Jones a cambio de la suya y de paso evitar pagarte el doblón de oro que te pidió prestado hace un año. Pero Jack no te abandonó a tu suerte, dejo un camino de pistas para que puedas librarte de la maldición y vuelvas a fregar los pisos del Perla Negra al ritmo de los gritos del Señor Gibbs.</p>
+									<a>Tiempo de juego: 60 minutos</a>
+									<a href='{{path('reservas')}}'><div class='reservaJuegosModal'>RESERVÁ AHORA</div></a>
 								</div>
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>
 				  </div>
@@ -80,27 +82,26 @@
     		<img id='ouija' class='img-fluid' src='{{asset('img/OUIJA.jpg')}}'>
     		<a href='{{path('reservas')}}'><div class='reservaJuegosAhora'>RESERVÁ AHORA</div></a>
 				<!-- Button trigger modal OUIJA -->
-				<a type="button" data-toggle="modal" data-target=".ouija-modal-xl"><div class='masInfo'>MÁS INFORMACIÓN</div></a>
+				<a type="button" data-toggle="modal" data-target=".ouija-modal-lg"><div class='masInfo'>MÁS INFORMACIÓN</div></a>
 				<!-- Modal OUIJA-->
-				<div class="modal fade ouija-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-				  <div class="modal-dialog modal-xl">
+				<div class="modal fade ouija-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
 				    <div class="modal-content">
 							<div class="modal-header">
-				        <h5 class="modal-title" id="exampleModalLabel">OUIJA</h5>
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				          <span aria-hidden="true">&times;</span>
 				        </button>
 				      </div>
 							<div id='ouijaModalBody' class="modal-body row">
-								<div class='col-md-3 ouijaModalBodyContainer'>
+								<div class='col-md-4 ouijaModalBodyContainer'>
 									<img id='ouijaModalImg' class='img-fluid' src='{{asset('img/OUIJA.jpg')}}'>
 								</div>
-				        <div class='col-md-9 ouijaModalBodyContainer'>
-									<a>Debbie Galardi recuerda jugar a la Ouija con su mejor amiga Laine Morris siendo niñas. En la actualidad, Debbie lanza su tabla Ouija en el fuego, quemándola. Debbie implica a Laine que algo extraño sucedió con el tablero Ouija. Después de que Laine se marcha, el tablero Ouija reaparece en el dormitorio de Debbie y es poseída. Luego se cuelga con las luces navideñas, y resultando así en su muerte...</a>
+				        <div class='col-md-8 modalBodyText'>
+									<h5 class="modal-title" id="exampleModalLabel">Ouija: El Juego de la Copa</h5>
+									<p>En este antiguo living vos y tus amigos se juntan a intentar resolver el misterio de Griselda mediante la invocacion de espiritus.</p>
+									<a>Tiempo de juego: 30 minutos</a>
+									<a href='{{path('reservas')}}'><div class='reservaJuegosModal'>RESERVÁ AHORA</div></a>
 								</div>
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>
 				  </div>

@@ -178,8 +178,50 @@ a:hover {
     background-color: #1b1a1b;
 }
 
+.modal-header {
+  border-bottom: black;
+}
+
 .close {
     color: white;
+}
+
+.modal-body {
+    margin-bottom: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.modal-title {
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.modalBodyText {
+  padding-left: 8%;
+}
+
+.reservaJuegosModal {
+    border-radius: 14px;
+    padding: 12px;
+    margin-top: 30px;
+    margin-left: 62%;
+    text-align: right;
+    background-color: #bf1e2e;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-title {
+    text-align: left;
+    margin-top: 8%;
+  }
+
+  .reservaJuegosModal {
+    margin-left: 41%;
+  }
+
 }
 
 
