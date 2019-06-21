@@ -225,11 +225,37 @@ a:hover {
 }
 
 
+/* EVENTOS */
+
+#eventos {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.card-body {
+  padding-top: 80%;
+}
+
+.eventosButton {
+  border-radius: 14px;
+  padding: 12px;
+  margin-top: 30px;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  background-color: #bf1e2e;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+
 /* PRECIOS */
 
 #precios {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 10%;
+    padding-bottom: 10%;
     background-size: cover;
     background-color: #373536;
     text-align: center;
